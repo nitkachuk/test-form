@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма для измерений</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Добавляем отступ снизу для кнопки Сохранить */
+    .btn-save {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <form id="measurementForm">
+      <div class="form-group">
+        <label for="department">Список отделений:</label>
+        <select class="form-control" id="department" name="department">
+          <option value="1.1">1.1</option>
+          <option value="1.2">1.2</option>
+          <option value="1.4">1.4</option>
+          <option value="1.5">1.5</option>
+        </select>
+      </div>
+      <div id="measurementFields">
+        <!-- Dynamic fields for each department will be added here -->
+      </div>
+      <button type="submit" class="btn btn-primary btn-save">Сохранить</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
